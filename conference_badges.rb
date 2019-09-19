@@ -20,6 +20,9 @@ def assign_rooms(attendees)
       new_array
   end
   
-  def printer(attendees)
-    new_array = batch_badge_creator(attendees).concat(assign_rooms(attendees))
+def printer(attendees)
+    new_array = batch_badge_creator(attendees).concat
+    new_array.each do |x|
+      puts x
   end
+end
